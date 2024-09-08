@@ -2,21 +2,17 @@ plugins {
     kotlin("jvm") version "2.0.0"
 }
 
-group = "org.script"
-version = "v1.0"
+group = "custom.script"
+version = ""
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
-    implementation("com.google.code.gson:gson:2.11.0")
+    // implementation("com.google.code.gson:gson:2.11.0")
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
 
 kotlin {
     jvmToolchain(21)
