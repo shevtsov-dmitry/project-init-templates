@@ -1,0 +1,7 @@
+{
+  "session_management": {
+    "start": "Start",
+    "pause": "Pause",
+    "end": "End"
+  }
+}

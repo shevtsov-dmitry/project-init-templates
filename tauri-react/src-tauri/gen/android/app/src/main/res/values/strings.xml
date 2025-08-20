@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">tailwind-tauri</string>
+    <string name="main_activity_title">tailwind-tauri</string>
+</resources>
