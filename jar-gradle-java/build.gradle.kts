@@ -35,6 +35,13 @@ tasks.register<Jar>("myJar") {
   }
 }
 
+tasks.register<JavaExec>("runMyJar") {
+  dependsOn("myJar")
+  mainClass.set("org.example.Main")
+  classpath = files(tasks.named<Jar>("myJar").get().archiveFile)
+}
+
+
 tasks.test {
   useJUnitPlatform()
 }
